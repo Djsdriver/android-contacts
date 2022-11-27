@@ -4,7 +4,7 @@ import androidx.annotation.NonNull;
 
 import ru.yandex.practicum.contacts.presentation.base.ListDiffInterface;
 
-public class FilterContactTypeUi implements ListDiffInterface<FilterContactTypeUi>{
+public class FilterContactTypeUi implements ListDiffInterface<FilterContactTypeUi> {
 
     private final FilterContactType contactType;
     private final boolean selected;
@@ -25,7 +25,7 @@ public class FilterContactTypeUi implements ListDiffInterface<FilterContactTypeU
 
     @Override
     public boolean theSameAs(FilterContactTypeUi filterContactTypeUi) {
-        return this.getContactType()==filterContactTypeUi.getContactType();
+        return this.getContactType() == filterContactTypeUi.getContactType();
     }
 
     @Override
